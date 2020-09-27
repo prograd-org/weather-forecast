@@ -26,7 +26,7 @@ And finally, create a pull request so your ProGrad Mentor (PM) can review your w
 Create an account in (https://openweathermap.org/). Once you create an account, go to settings and get your API.
 
 ### Progression 2: WHAT'S THE WEATHER
-Use Fetch or Axios to fetch the data from openweathermap api and display it as shown in the output. 
+Use Fetch to fetch the data from openweathermap api and display it as shown in the output. 
 
 ![Image description](https://i1.faceprep.in/ProGrad/weather-1.png)
 
