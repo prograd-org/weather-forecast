@@ -28,7 +28,7 @@ Create an account in (https://openweathermap.org/). Once you create an account, 
 ### Progression 2: WHAT'S THE WEATHER
 Use Fetch or Axios to fetch the data from openweathermap api and display it as shown in the output. 
 
-![Image description](https://i1.faceprep.in/ProGrad/weather-1.PNG)
+![Image description](https://i1.faceprep.in/ProGrad/weather-1.png)
 
 
 Happy Coding ProGrads❤️
