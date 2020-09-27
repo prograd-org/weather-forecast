@@ -1,54 +1,30 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1">
-       <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="grid-container">
-            <div class="grid-item1">
-                
-                <div class="bdy">
-                    <h1>Weather <span>App</span></h1>  
-               <p>
-                   Build a simple UI that shows the weather of a city that is <br>
-                   entered by the user. Use HTML, CSS and JavaScript to<br>
-                   achieve this.
-               </p>
-               
-               <h3>Requirements:</h3>
-               <ol>
-                <li>Use open weather map API to achieve this.https://openweathermap.org/</li>
-                <li>You need to create an account in openweathermap.org</li> 
-                <li>Display the following details
-                    <ol>
-                <li>Current date and time</li>
-                 <li>Weather(can be random)</li>
-                  <li>Temperature(conversion from one unit to another)</li>
-                  <li>Text box with autocomplete</li></ol></li>
-               </ol>
-            </div>
-            </div>
-            <div class="grid-item">
-                <div id="tt">
-                    <p id="showPlace"></p>
-                    
-                    <p id="showDayAndTime"></p>
-                    <p id="showWeather"></p>
-                    <img src="" id="icon">
-                    <p id="showTemperature"></p>
-                    
-                </div>
-                <div class="dd">
-                    <p id="pp">Enter City name</p>
-                    <input type="text" id="txt1" placeholder="Enter city name" size="30%"><br><br>
-                    <button id="btn">Submit</button>
-                   
-                </div>
-            </div>
-            </div>
-            <script src="weather.js"></script>
-            
-           
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Weather app</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<body>
+  <div class="app-wrap">
+    <header>
+      <input type="text" autocomplete="on" class="search-box" 
+      placeholder="Search for a city..." />
+    </header>
+    <main>
+      <section class="location">
+        <div class="city"></div>
+        <div class="date"></div>
+      </section>
+      <div class="current">
+        <div class="temp"><span>°c</span></div>
+        <div class="weather"></div>
+        <div class="hi-low">°c / °c</div>
+      </div>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
 </html>
