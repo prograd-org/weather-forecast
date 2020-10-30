@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Weather app</title>
-  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="app-wrap">
     <header>
       <input type="text" autocomplete="on" class="search-box" 
-      placeholder="Search for a city..." />
+      placeholder="Search for a city..." id="input" onchange="getData()"/>
     </header>
     <main>
       <section class="location">
@@ -19,12 +19,12 @@
         <div class="date"></div>
       </section>
       <div class="current">
-        <div class="temp"><span>°c</span></div>
+        <div class="temp"><span></span></div>
         <div class="weather"></div>
-        <div class="hi-low">°c / °c</div>
+        <div class="hi-low"></div>
       </div>
     </main>
   </div>
-  <script src="main.js"></script>
+  <script src="weather.js"></script>
 </body>
 </html>
