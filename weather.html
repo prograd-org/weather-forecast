@@ -10,21 +10,22 @@
 <body>
   <div class="app-wrap">
     <header>
-      <input type="text" autocomplete="on" class="search-box" 
+      <input type="text" autocomplete="on" id="search-box" 
       placeholder="Search for a city..." />
+      <button onclick="getData()">submit</button>
     </header>
     <main>
       <section class="location">
-        <div class="city"></div>
-        <div class="date"></div>
+        <div id="city"></div>
+        <div id="date"></div>
       </section>
       <div class="current">
-        <div class="temp"><span>°c</span></div>
-        <div class="weather"></div>
-        <div class="hi-low">°c / °c</div>
+        <div id="temp"></div>
+        <div id="weather"></div>
+        <div id="hi-low"></div>
       </div>
     </main>
   </div>
-  <script src="main.js"></script>
+  <script src="/weather.js"></script>
 </body>
 </html>
