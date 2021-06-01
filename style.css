@@ -1,63 +1,34 @@
-.grid-container {
-        
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: white;
-    padding: 5px;
-    height: 100%;
-  }
-  .grid-item1{
-  
-      background-color: royalblue;
-      display: grid;
-  }
-  .grid-item{
-  
-  background-color: lightgrey;
-  display: grid;
-  }
-  h1, h3{
-      color: white;
-      font-weight: bolder;
-      margin-top: 25%;
-  }
-  span{
-      color: black;
-      font-weight: bolder;
-  }
-  p{
-      color: white;
-      
-  }
-  li{
-      color: white;
-      
-  }
-  .bdy{
-      margin-left: 20%;
-  }
-  .dd{
-      margin-left: 25%;
-      margin-top: 10%;
-  }
-  #pp{
-      color: black;
-  }
-  #show{
-      color: black;
-      font-size: xx-large;
-  }
-  #show1,#show3{
-      color: black;
-      font-size: medium;
-  }
-  #show2{
-      color: black;
-      font-size: xx-large;
-  }
-  #tt{
-      margin-left: 20%;
-      margin-top: 20%;
-  }
-     
-    
+.app-wrap{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+    text-align: center;
+}
+body{
+    background-color: blueviolet;
+    color:white;
+}
+.city{
+    font-size: 50px;;
+}
+.weather,.hi-low{
+    font-size: 40px;
+}
+.temp{
+    font-size: 80px;
+    font-weight: bolder;
+}
+.search-box,.submit,.city,.temp,.weather,.hi-low{
+    margin:20px;
+}
+.search-box,.submit{
+    border-radius: 10%;
+    height:40px;
+    width:200px;
+    font-size: 20px;
+}
+.submit:hover{
+    background-color: burlywood;
+}
