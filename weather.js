@@ -11,7 +11,7 @@ _('.search').addEventListener('click', () => {
 		alert("Please enter the city!");
 		return;
 	}
-	fetch(`http://api.openweathermap.org/data/2.5/weather?q=${input}&APPID=abe4f860db384821e5fa73a0f37d9e17`)
+	fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input}&APPID=abe4f860db384821e5fa73a0f37d9e17`)
 		.then((response) => response.json())
 		.then((data) => {
 			console.log(data);
