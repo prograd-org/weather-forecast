@@ -1,6 +1,6 @@
 //Complete the Weather API Backend part using openweathermap api
 let weather = {
-    apikey: "2d29b41223aae3b824799ce10f81daps",
+    apikey: "cb3480ffc0fe36eb40d985fa3f8cc4f8",
     fetchweather:function(city) {
         fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + this.apikey)
 
