@@ -1,63 +1,79 @@
-.grid-container {
-        
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: white;
-    padding: 5px;
-    height: 100%;
-  }
-  .grid-item1{
-  
-      background-color: royalblue;
-      display: grid;
-  }
-  .grid-item{
-  
-  background-color: lightgrey;
-  display: grid;
-  }
-  h1, h3{
-      color: white;
-      font-weight: bolder;
-      margin-top: 25%;
-  }
-  span{
-      color: black;
-      font-weight: bolder;
-  }
-  p{
-      color: white;
-      
-  }
-  li{
-      color: white;
-      
-  }
-  .bdy{
-      margin-left: 20%;
-  }
-  .dd{
-      margin-left: 25%;
-      margin-top: 10%;
-  }
-  #pp{
-      color: black;
-  }
-  #show{
-      color: black;
-      font-size: xx-large;
-  }
-  #show1,#show3{
-      color: black;
-      font-size: medium;
-  }
-  #show2{
-      color: black;
-      font-size: xx-large;
-  }
-  #tt{
-      margin-left: 20%;
-      margin-top: 20%;
-  }
-     
-    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+   background-color: black;
+   margin:30px 50px ;
+   color: white;
+   
+}
+.app-wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    background-color: rgb(98, 8, 136);
+    border: 2px solid black;
+}
+.app-wrap input{
+    margin-top: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius:20px ;
+    height: 45px;
+    width: 250px;
+    background-color: rgb(189, 125, 216);
+    border: 1px solid transparent;
+    border-bottom: 4px solid lightsalmon;
+    outline: none;
+    padding: 15px;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+.app-wrap input::placeholder{
+    color: black;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+.city {
+  margin-top: 40px;
+  font-size: 2rem;
+  text-align: center;
+  font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+.date{
+    margin-top: 5px;
+    text-align: center;
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+.temp{
+    margin-top: 30px;
+    font-size: 6rem;
+    font-weight: 800;
+    text-shadow:0px 10px 1px black;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.weather{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-style: bold;
+    text-transform: capitalize;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-shadow:0px 3px 1px black;
+}
+.hi-low{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 1.5rem;
+    text-shadow:0px 3px 1px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
