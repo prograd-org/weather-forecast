@@ -25,7 +25,7 @@ function apidata() {
     "December",
   ];
   var today = new Date();
-  var key = config.SECRET_API_KEY;;
+  var key = "6a2547232fc58c844e7d59f7243fcd94";
   var input = document.querySelector("#input").value;
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${input}&units=metric&appid=${key}`;
   fetch(url)
