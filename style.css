@@ -1,63 +1,68 @@
-.grid-container {
-        
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: white;
-    padding: 5px;
+body{
+    background-image: linear-gradient(rgb(159, 63, 214), rgb(42, 4, 65));
     height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+  }  
+  input{
+    background-color: rgba(155, 95, 212, 0.568);
+    height: 50px;
+    width: 400px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 2%;
+    color: rgb(207, 194, 194);
+    border:none;
+    box-shadow: 2px 5px 3px rgb(219, 112, 12);
+    border-radius: 20px 0px 20px 0px;
+  }  
+  button{
+    background-color: rgba(155, 95, 212, 0.568);
+    height: 50px;
+    width: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 25px;
+    margin: 2%;
+    color: rgb(228, 215, 215);
+    border:none;
+    box-shadow: 2px 4px 3px rgb(219, 112, 12);
+    border-radius: 0px 20px 0px 20px;
+  } 
+  .location{
+    margin: 1%;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(252, 252, 252);       
   }
-  .grid-item1{
-  
-      background-color: royalblue;
-      display: grid;
+  .city{
+    font-size: 300%;
+    font-weight: bold;
   }
-  .grid-item{
-  
-  background-color: lightgrey;
-  display: grid;
+  .date{
+    font-size: 150%;
   }
-  h1, h3{
-      color: white;
-      font-weight: bolder;
-      margin-top: 25%;
+  .temp{
+   font-size: 800%;
+    font-weight: bolder;
+    margin: 1%;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(252, 252, 252);       
   }
-  span{
-      color: black;
-      font-weight: bolder;
+  .weather{
+   margin-top: 1%;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(252, 252, 252);
+    font-size: 200%;
+    font-style: italic;
+    font-weight: bold;
   }
-  p{
-      color: white;
-      
+  .high-low{
+   font-family: 'Times New Roman', Times, serif;
+    color: rgb(252, 252, 252);
+    font-size: 150%;
+    font-style: italic;
+
   }
-  li{
-      color: white;
-      
-  }
-  .bdy{
-      margin-left: 20%;
-  }
-  .dd{
-      margin-left: 25%;
-      margin-top: 10%;
-  }
-  #pp{
-      color: black;
-  }
-  #show{
-      color: black;
-      font-size: xx-large;
-  }
-  #show1,#show3{
-      color: black;
-      font-size: medium;
-  }
-  #show2{
-      color: black;
-      font-size: xx-large;
-  }
-  #tt{
-      margin-left: 20%;
-      margin-top: 20%;
-  }
-     
-    
