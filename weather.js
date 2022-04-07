@@ -25,4 +25,4 @@ document.querySelector('.search').addEventListener('click', () => {
 		.catch(() => {
 			alert("The city you entered is incorrect!");
 		})
-});
+}); 
