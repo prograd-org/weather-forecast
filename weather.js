@@ -4,7 +4,7 @@ let day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Sa
 let month = ['January', 'Febuary', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'Octomber', 'November', 'December'];
 
 
-
+ 
 document.querySelector('.search').addEventListener('click', () => {
 	let input = document.querySelector('.search-box').value;
 	if (input === "") {
