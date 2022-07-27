@@ -1,63 +1,88 @@
-.grid-container {
-        
-    display: grid;
-    grid-template-columns: 50% 50%;
-    background-color: white;
-    padding: 5px;
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    background: url(25501.jpg), linear-gradient(rgb(0,0,0, 0.0), rgb(0,0,0, 0.0));
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-blend-mode: saturation;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+}
+.search-box{
+    width: 400px;
+    height: 25px;
+    font-size: larger;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 6px rgb(0,0,0, 0.2);
+}
+.search-box:focus{
+    outline: 3px solid gold;
+}
+
+#search-button{
+    -webkit-filter: drop-shadow(0px 0px 6px rgb(0,0,0, 0.2));
+    filter: drop-shadow(0px 0px 6px rgb(0,0,0, 0.2));
+    cursor: pointer;
+}
+#search-button:hover{
+    fill: gold;
+    transform: scale(1.05);
+}
+
+.city{
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.sun{
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    z-index: -1;
+}
+
+.moon{
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+#mask{
+    position: absolute;
     height: 100%;
-  }
-  .grid-item1{
-  
-      background-color: royalblue;
-      display: grid;
-  }
-  .grid-item{
-  
-  background-color: lightgrey;
-  display: grid;
-  }
-  h1, h3{
-      color: white;
-      font-weight: bolder;
-      margin-top: 25%;
-  }
-  span{
-      color: black;
-      font-weight: bolder;
-  }
-  p{
-      color: white;
-      
-  }
-  li{
-      color: white;
-      
-  }
-  .bdy{
-      margin-left: 20%;
-  }
-  .dd{
-      margin-left: 25%;
-      margin-top: 10%;
-  }
-  #pp{
-      color: black;
-  }
-  #show{
-      color: black;
-      font-size: xx-large;
-  }
-  #show1,#show3{
-      color: black;
-      font-size: medium;
-  }
-  #show2{
-      color: black;
-      font-size: xx-large;
-  }
-  #tt{
-      margin-left: 20%;
-      margin-top: 20%;
-  }
-     
-    
+    width: 100%;
+    z-index: -1;
+}
+main{
+    color: white;
+}
+
+.location{
+    margin: 20px 0;
+}
+
+.hi-low{
+    width: 90px;
+    margin: 20px 0;
+}
+
+.temp{
+    font-size: 50px;
+    font-weight: 800;
+}
+.weather{
+    font-size: 30px;
+}
