@@ -52,7 +52,7 @@ function getWeatherDetail(city){
                 document.querySelector(".main").innerHTML = `
                     <section class="location">
                         <div class="city">${data.name}, ${data.sys.country}</div>
-                        <div class="date">${new Date((data.dt+a*60)*1000).toString().substring(0, 15)} ${('0' + ~~(a/60)).slice(-2)}:${('0' + a%60).slice(-2)}</div>
+                        <div class="date">${new Date((data.dt+ data.timezone + new Date().getTimezoneOffset()*60)*1000).toString().substring(0, 15)} ${('0' + ~~(a/60)).slice(-2)}:${('0' + a%60).slice(-2)}</div>
                     </section>
                     <div class="current">
                         <div class="temp"><span>${~~data.main.feels_like}°C</span></div>
