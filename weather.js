@@ -8,8 +8,9 @@ function getWeatherDetail(city){
             console.log(data);
             let sunrise = data.sys.sunrise;
             let sunset = data.sys.sunset;
-            let sunriseD = new Date((sunrise + (data.timezone - 19800))*1000);
-            let sunsetD = new Date((sunset + (data.timezone - 19800))*1000);
+            console.log(new Date().getTimezoneOffset()*60);
+            let sunriseD = new Date((sunrise + (data.timezone + new Date().getTimezoneOffset()*60))*1000);
+            let sunsetD = new Date((sunset + (data.timezone + new Date().getTimezoneOffset()*60))*1000);
             console.log(sunriseD.toString(), sunsetD.toString());
             let sunriseT = sunriseD.getHours()*60 + sunriseD.getMinutes()
             let sunsetT = sunsetD.getHours()*60 + sunsetD.getMinutes();
