@@ -35,15 +35,13 @@ function getWeatherDetail(city){
                 }else if(a > sunsetT){
                     moonPos = a - (diff + sunriseT);
                 }
-                
                 let sunPosX = sunPos/(diff/2)
                 let sunPosY = Math.sqrt(1 - (sunPosX - 1)**2)
                 sun.style.display = 'block';
                 sun.style.left = `calc(${sunPosX*50}% - 96px)`
                 sun.style.top = 100-sunPosY*100 + "%"
                 
-                
-                let moonPosX = moonPos/(300)
+                let moonPosX = moonPos/(1440 - sunsetT)
                 let moonPosY = Math.sqrt((1- (moonPosX - 1)**2));
                 moon.style.display = 'block';
                 moon.style.left = `calc(${moonPosX*50}% - 96px)`
@@ -52,7 +50,7 @@ function getWeatherDetail(city){
                 document.querySelector(".main").innerHTML = `
                     <section class="location">
                         <div class="city">${data.name}, ${data.sys.country}</div>
-                        <div class="date">${new Date((data.dt+ data.timezone + new Date().getTimezoneOffset()*60)*1000).toString().substring(0, 15)} ${('0' + ~~(a/60)).slice(-2)}:${('0' + a%60).slice(-2)}</div>
+                        <div class="date">${new Date((data.dt+ data.timezone + new Date().getTimezoneOffset()*60)*1000).toString().substring(0, 21)}</div>
                     </section>
                     <div class="current">
                         <div class="temp"><span>${~~data.main.feels_like}°C</span></div>
