@@ -13,6 +13,8 @@ body{
     background-repeat: no-repeat;
     background-blend-mode: saturation;
     font-family: 'Mochiy Pop One', sans-serif;
+    -webkit-user-select: none;
+    user-select: none;
 }
 header{
     display: flex;
